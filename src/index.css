@@ -1,0 +1,155 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.expense-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px  rgba(0,0,0,.1);
+  background-color: white;
+  max-width: 350px;
+  
+}
+
+.expense-item.positive{
+  border-right: 10px solid green;
+}
+
+.expense-item.negative{
+  border-right: 10px solid red;
+}
+.income-expense-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px   rgba(0,0,0,.1);
+  background-color: white;
+  max-width: 350px;
+  margin: 1rem auto;
+}
+
+.income,.expense{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.income .title, .expense .title{
+  font-size: 20px;
+  color: black;
+}
+.income{
+  color: green;
+}
+.expense{
+  color: red;
+}
+.block{
+  width: 2px;
+  background-color: #aaa;
+  border-radius: 10px;    
+}
+
+
+h1{
+  text-align: center;
+}
+.inpts{
+  margin: auto;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 55px;
+  max-width: 393px;
+}
+
+input{
+  box-shadow: 0 0 5pt 0.5pt #b2acac;
+}
+
+#title,#amount{
+  padding: 20px;
+  width: 350px;
+  background-color: white;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+#add{
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  background-color: black;  
+}
+
+#a:hover{
+  background-color: white;
+  color: black;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 400px;
+  gap: 10px;
+}
+.expense-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px  rgba(0,0,0,.1);
+  background-color: white;
+  max-width: 350px;
+  flex-grow: 1;
+  
+}
+
+.expense-item.positive{
+  border-right: 10px solid green;
+}
+
+.expense-item.negative{
+  border-right: 10px solid red;
+}
+.balance{
+  text-align:center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 30px;
+}
+
+.error{
+  font-size: 12px;
+  color: red;
+  margin:  0 0 0.75rem 0;
+}
+
+#delete{
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  box-shadow: 0 0 5pt 0.5pt #b2acac;
+  height: 40px;
+  width: 50px;
+}
